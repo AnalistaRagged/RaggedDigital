@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color: rgb(0, 0, 0);
 }
 
 .App-logo {
@@ -14,14 +15,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .App-link {
@@ -38,7 +39,7 @@
 }
 .ProSidebar {
   height: 500vh;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 button {
@@ -46,4 +47,32 @@ button {
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+/* App.css */
+
+.css-ycmq9d {
+  position: relative;
+  height: 100vh !important; /* Asegura que el sidebar tenga la altura de la pantalla */
+  overflow: hidden auto;
+  z-index: 3;
+  background-color: #000000 !important; /* Color de fondo */
+  color: #fff !important; /* Color de la letra */
+}
+
+.css-ycmq9d .pro-sidebar {
+  height: 100% !important; /* Asegura que el sidebar ocupe toda la altura disponible */
+}
+
+.css-ycmq9d .pro-menu-item, .css-ycmq9d .pro-menu-item a {
+  color: #fff !important; /* Color de la letra para los items del menú */
+}
+
+.css-ycmq9d .pro-menu-item:hover, .css-ycmq9d .pro-menu-item-active {
+  background-color: #ffffff !important; /* Color de fondo al pasar el cursor o al estar activo */
+}
+
+/* Sobrescribir el estilo específico */
+.ps-sidebar-container.css-dip3t8 {
+  background-color: #000000 !important; /* Color de fondo */
 }
