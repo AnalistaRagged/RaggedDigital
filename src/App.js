@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { ProSidebarProvider, Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import { FaGem, FaHeart, FaCalculator} from 'react-icons/fa';
 import { FaComputer } from "react-icons/fa6";
-import { BsPersonArmsUp } from "react-icons/bs";
-import { BsPencilSquare } from "react-icons/bs";
-import { Link } from 'react-router-dom';
+import { BsPersonArmsUp, BsPencilSquare} from "react-icons/bs";
+import { AiOutlineCaretLeft } from "react-icons/ai";
+import { AiOutlineCaretRight } from "react-icons/ai";
 
 import './App.css';
 
@@ -34,14 +34,14 @@ function App() {
           >
             RAGGED DIGITAL
           </div>
-          <button onClick={toggleSidebar} style={{ background: 'none', border: 'none', color: 'black', cursor: 'pointer' }}>
-            {collapsed ? 'Expandir' : 'Colapsar'}
+          <button onClick={toggleSidebar} style={{ background: 'none', border: 'none', color: 'white', cursor: 'pointer' }}>
+            {collapsed ? <AiOutlineCaretRight /> : <AiOutlineCaretLeft />}
           </button>
           <Menu iconShape="circle">
           <MenuItem icon={<FaGem />}>
-          <Link to="https://www.ragged.com.co" target="_blank" rel="noopener noreferrer"></Link>
+          <a href="https://www.ragged.com.co" target="_blank" rel="noopener noreferrer">
           Ecommerce
-          </MenuItem>
+          </a></MenuItem>
               <SubMenu title="Components" >
                 <MenuItem>Component 1</MenuItem>
               </SubMenu>
@@ -58,7 +58,7 @@ function App() {
                 <MenuItem>Component 1</MenuItem>
               </SubMenu>
               <MenuItem icon={<BsPersonArmsUp />}>Gestion Humana </MenuItem>
-
+            
           </Menu>
           <div
           
