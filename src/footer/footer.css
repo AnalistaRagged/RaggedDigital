@@ -123,7 +123,7 @@ hr{
 }
 
 .sb_footer-below-links{
-    flex-direction: column;
+    justify-content: space-between;
 }
 
 .sb_footer-below-links p{
